@@ -1,0 +1,11 @@
+Only in linux-3.13.3.new/drivers/net/wireless/ath/ath9k: .directory
+diff -r linux-3.13.3.new/drivers/net/wireless/ath/ath9k/hw.c linux-3.13.3/drivers/net/wireless/ath/ath9k/hw.c
+2856,2859c2856,2858
+< //	reg->power_limit = min_t(u32, limit, MAX_RATE_POWER);
+< 	reg->power_limit = min_t(u32, MAX_RATE_POWER, MAX_RATE_POWER);
+< //	if (test)
+< 		channel->max_power = 50; //MAX_RATE_POWER / 2;
+---
+> 	reg->power_limit = min_t(u32, limit, MAX_RATE_POWER);
+> 	if (test)
+> 		channel->max_power = MAX_RATE_POWER / 2;
