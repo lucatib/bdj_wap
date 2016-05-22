@@ -1,2 +1,1 @@
-# wap_bdj
-# wap_bdj
+Modds to wap @ bdj
